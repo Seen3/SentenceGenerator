@@ -25,6 +25,7 @@ function newChar() {
         }
       }
       this.fitness = score / target.length;
+      this.fitness=pow(this.fitness,3);
     }
     crossover(partner) {
       let child = new DNA(this.genes.length);
